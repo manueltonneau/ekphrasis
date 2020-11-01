@@ -214,5 +214,6 @@ if __name__ == '__main__':
 
         prune_low_freq(stats, low_freq_threshold)
         write_stats(stats)
+        print('Stats generated')
     else:
         print("Wrong input. Give a file or directory!")
