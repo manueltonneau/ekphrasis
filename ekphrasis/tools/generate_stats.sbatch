@@ -1,6 +1,8 @@
 #!/bin/bash
+
 COUNTRY_CODE=$1
 FOLDER_NAME=$2
+
 #SBATCH --job-name=generate_stats
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
