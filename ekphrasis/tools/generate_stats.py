@@ -183,14 +183,16 @@ if __name__ == '__main__':
     stats = defaultdict(lambda: defaultdict(int))
     pruning_size_threshold = 5000000
     low_freq_threshold = 3
-
+    print('Starting')
     if os.path.isfile(args.input):
+        print('Input is file')
         count_file(args.input, stats)
         time.sleep(0.01)
         prune_low_freq(stats, 1)
         write_stats(stats)
 
     elif os.path.isdir(args.input):
+        print('Input is dir')
         files = glob.glob(args.input + "*.txt")
         for i, file in enumerate(files):
             try:
