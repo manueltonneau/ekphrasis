@@ -16,7 +16,7 @@ module purge
 module load anaconda3/2019.10
 source /scratch/mt4493/twitter_labor/code/envs/inference_env/bin/activate
 
-DATA_FOLDER=/scratch/mt4493/twitter_labor/twitter-labor-data/data/pretraining/${COUNTRY_CODE}/${FOLDER_NAME}
+DATA_FOLDER=/scratch/mt4493/twitter_labor/twitter-labor-data/data/pretraining/${COUNTRY_CODE}/${FOLDER_NAME}/
 CODE_FOLDER=/scratch/mt4493/twitter_labor/code/repos_annexe/ekphrasis/ekphrasis/tools
 
 echo 'Starting to run code'
