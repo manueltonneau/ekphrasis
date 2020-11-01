@@ -194,6 +194,7 @@ if __name__ == '__main__':
     elif os.path.isdir(args.input):
         print('Input is dir')
         files = glob.glob(args.input + "*.txt")
+        print(files)
         for i, file in enumerate(files):
             print(i)
             try:
