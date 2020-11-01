@@ -5,8 +5,8 @@ FOLDER_NAME=$2
 
 #SBATCH --job-name=generate_stats
 #SBATCH --nodes=1
-#SBATCH --cpus-per-task=1
-#SBATCH --mem=150GB
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=200GB
 #SBATCH --time=24:00:00
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END
