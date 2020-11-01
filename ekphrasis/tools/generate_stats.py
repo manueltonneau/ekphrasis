@@ -195,8 +195,10 @@ if __name__ == '__main__':
         print('Input is dir')
         files = glob.glob(args.input + "*.txt")
         for i, file in enumerate(files):
+            print(i)
             try:
                 count_file(file, stats, str(i + 1) + "/" + str(len(files)))
+                print('Counted file')
             except Exception as e:
                 print("ERROR - ", e, file)
 
