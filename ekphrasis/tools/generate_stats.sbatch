@@ -19,8 +19,12 @@ source /scratch/mt4493/twitter_labor/code/envs/inference_env/bin/activate
 DATA_FOLDER=/scratch/mt4493/twitter_labor/twitter-labor-data/data/pretraining/${COUNTRY_CODE}/${FOLDER_NAME}
 CODE_FOLDER=/scratch/mt4493/twitter_labor/code/repos_annexe/ekphrasis/ekphrasis/tools
 
+echo 'Starting to run code'
+
 python3 ${CODE_FOLDER}/generate_stats.py \
 --input ${DATA_FOLDER} \
 --name twitter_${COUNTRY_CODE} \
 --ngrams 2 \
 --mincount 70 30
+
+echo 'Code has been run'
