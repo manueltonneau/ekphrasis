@@ -49,7 +49,7 @@ def read_stats(corpus, ngram):
     text = path.join(*[stats_dir, corpus, "counts_{}grams.txt".format(ngram)])
     dumped = path.join(
         *[stats_dir, corpus, "counts_{}grams.json".format(ngram)])
-
+    print(text)
     if os.path.isfile(dumped):
         with open(dumped, "r") as f:
             stats = json.load(f)
