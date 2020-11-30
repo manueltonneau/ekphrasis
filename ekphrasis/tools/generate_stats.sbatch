@@ -23,7 +23,7 @@ echo 'Starting to run code'
 
 python3 ${CODE_FOLDER}/generate_stats.py \
 --input ${DATA_FOLDER} \
---name twitter_${COUNTRY_CODE} \
+--name twitter_${COUNTRY_CODE}_${FOLDER_NAME} \
 --ngrams 2 \
 --mincount 70 30
 
