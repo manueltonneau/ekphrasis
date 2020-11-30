@@ -1,8 +1,5 @@
 #!/bin/bash
 
-COUNTRY_CODE=$1
-FOLDER_NAME=$2
-
 #SBATCH --job-name=generate_stats
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
@@ -11,6 +8,9 @@ FOLDER_NAME=$2
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END
 #SBATCH --mail-user=mt4493@nyu.edu
+
+COUNTRY_CODE=$1
+FOLDER_NAME=$2
 
 module purge
 module load anaconda3/2019.10
